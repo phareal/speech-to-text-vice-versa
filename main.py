@@ -12,7 +12,7 @@ def onlineConversion(input):
     playsound("output/"+str(ts)+'.mp3')
 
 def offlineConversion(input):
-    print("from offline")
+    print("from offline wip")
 
 
 def main():
