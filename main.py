@@ -4,6 +4,7 @@ import datetime
 from playsound import playsound
 from utils import is_connected
 import pyttsx3
+from scrapping import getPageContent
 
 
 
@@ -24,12 +25,15 @@ def offlineConversion(input):
 
 
 def main():
+
     _input = input("Veuillez entrer votre texte: ")
-    print(_input)
-    if is_connected():
-        onlineConversion(_input)
-    else:
-        offlineConversion(_input)
+
+    getPageContent(_input)
+    # print(_input)
+    # if is_connected():
+    #     onlineConversion(_input)
+    # else:
+    #     offlineConversion(_input)
 
 
 if __name__ == "__main__":
